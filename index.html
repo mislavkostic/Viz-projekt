@@ -6,17 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Popis 2021</title>
 </head>
 
 <body>
-    <div style="
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-weight: 500;">
+    <div id="naslov">
         Popis stanovništva 2021
     </div>
     <script>
@@ -24,10 +19,10 @@
         var height = 700;
 
         var skala = d3.scale.linear()
-            .domain([45000, 770000])
+            .domain([42000, 770000])
             .range([0, 6]);
 
-        var colors = ["#0000FF27", "#0000FF4B", "#0000FF6F", "#0000FF93", "#0000FFB7", "#0000FFDB", "#0000FFFF"];
+        var colors = ["#00000027", "#0000004B", "#0000006F", "#00000093", "#000000B7", "#000000DB", "#000000FF"];
 
         var projection = d3.geo.mercator()
             .center([0, 10])
@@ -41,17 +36,20 @@
         var svg = d3.select("body").append("svg")
             .attr("width", width)
             .attr("height", height)
-            .attr("style", "outline: thin solid black")
-            .style("display", "block")
-            .style("margin", "auto")
 
-        d3.select("body")
-            .append("div")
+
+        var legend = d3.select("body").append("div")
+            .attr("id", "legend")
+        legend.append("div").attr("class", "box a0")
+        legend.append("div").attr("class", "box a1")
+        legend.append("div").attr("class", "box a3")
+        legend.append("div").attr("class", "box a4")
+        legend.append("div").attr("class", "box a5")
+        legend.append("div").attr("class", "box a6")
+
+        
+        d3.select("body").append("div")
             .attr("id", "info")
-            .style("font-size", "25px")
-            .style("display", "flex")
-            .style("justify-content", "center")
-            .style("margin-top", "10px")
 
         var zoom = d3.behavior.zoom()
             .translate(projection.translate())
@@ -62,25 +60,22 @@
         var g = svg.append("g")
             .call(zoom);
 
-        d3.json("cro.json", function(error, cro) {
+        d3.json("cro.json", function (error, cro) {
             var data = topojson.feature(cro, cro.objects.layer1);
             var states = g.selectAll("path.county")
                 .data(data.features)
                 .enter()
                 .append("path")
                 .attr("class", "county")
-                .attr("id", function(d) {
+                .attr("id", function (d) {
                     return d.id;
                 })
                 .attr("d", path)
-                .style("fill", function(d) {
+                .style("fill", function (d) {
                     var value = Math.round(skala(d.properties.population));
                     return colors[value];
                 })
-                .style("stroke", "black")
-                .style("stroke-width", 1)
-                .style("stroke-opacity", 1)
-                .on("mouseover", function(d) {
+                .on("mouseover", function (d) {
                     console.log(d.properties.population);
                 })
                 .on("click", onClick);
@@ -101,7 +96,7 @@
             centered = d;
 
             g.selectAll("path")
-                .classed("active", centered && function(d) {
+                .classed("active", centered && function (d) {
                     return d === centered;
                 });
 
@@ -118,11 +113,11 @@
             centered = null;
 
             g.transition()
-                .delay(5000)
+                .delay(3000)
                 .duration(1500)
                 .attr("transform", `translate(${width / 2}, ${height / 2}) scale(${c}) translate(${-a}, ${-b})`)
                 .style("stroke-width", 0.75 / c)
-                .each('end', function() {
+                .each('end', function () {
                     d3.select("#info")
                         .html("");
                 });
