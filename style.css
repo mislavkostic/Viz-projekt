@@ -1,7 +1,9 @@
-body {}
+.sve{
+    display: flex;
+}
 
 #naslov {
-    display: flex;
+    display: block;
     justify-content: center;
     font-size: 30px;
     margin-top: 15px;
@@ -9,11 +11,17 @@ body {}
     font-weight: 500;
 }
 
-svg {
+/* .map {
     display: block;
     margin: auto;
     border: 1px solid black
+    
 }
+
+.pie_svg{
+    display: block;
+    margin: auto;
+} */
 
 #info {
     font-size: 25px;
@@ -42,7 +50,8 @@ svg {
 }
 
 .a6{
-    background-color: #000000FF
+    background-color: #000000FF;
+    border-right: 1px solid black;
 }
 
 .a5{
@@ -66,5 +75,6 @@ svg {
 }
 
 .a0{
-    background-color: #00000027
+    background-color: #00000027;
+    border-left: 1px solid black;
 }

@@ -46,6 +46,8 @@
                     ],
                     "properties": {
                         "population": 115862,
+                        "muskarci": 56601,
+                        "zene": 59261,
                         "area": 1,
                         "adm1_code": "HRV-1490",
                         "OBJECTID_1": 2181,
@@ -132,6 +134,8 @@
                     ],
                     "properties": {
                         "population": 96624,
+                        "muskarci": 47607,
+                        "zene": 49017,
                         "area": 1,
                         "adm1_code": "HRV-1491",
                         "OBJECTID_1": 2184,
@@ -233,6 +237,8 @@
                     ],
                     "properties": {
                         "population": 425412,
+                        "muskarci": 206393,
+                        "zene": 219019,
                         "area": 1,
                         "adm1_code": "HRV-1492",
                         "OBJECTID_1": 2182,
@@ -344,6 +350,8 @@
                     ],
                     "properties": {
                         "population": 160340,
+                        "muskarci": 78557,
+                        "zene":81783,
                         "area": 1,
                         "adm1_code": "HRV-1493",
                         "OBJECTID_1": 2186,
@@ -420,6 +428,8 @@
                     ],
                     "properties": {
                         "population": 120942,
+                        "muskarci": 58953,
+                        "zene":61989,
                         "area": 1,
                         "adm1_code": "HRV-1582",
                         "OBJECTID_1": 2222,
@@ -494,6 +504,8 @@
                     ],
                     "properties": {
                         "population": 112596,
+                        "muskarci": 54652,
+                        "zene":57944,
                         "area": 1,
                         "adm1_code": "HRV-1583",
                         "OBJECTID_1": 2223,
@@ -575,6 +587,8 @@
                     ],
                     "properties": {
                         "population": 42893,
+                        "muskarci": 21294,
+                        "zene":21599,
                         "area": 1,
                         "adm1_code": "HRV-1584",
                         "OBJECTID_1": 2215,
@@ -674,6 +688,8 @@
                     ],
                     "properties": {
                         "population": 266503,
+                        "muskarci": 127704,
+                        "zene":138799,
                         "area": 1,
                         "adm1_code": "HRV-1586",
                         "OBJECTID_1": 2214,
@@ -750,6 +766,8 @@
                     ],
                     "properties": {
                         "population": 140549,
+                        "muskarci": 68611,
+                        "zene":71938,
                         "area": 1,
                         "adm1_code": "HRV-1587",
                         "OBJECTID_1": 2224,
@@ -826,6 +844,8 @@
                     ],
                     "properties": {
                         "population": 301206,
+                        "muskarci": 146016,
+                        "zene":155190,
                         "area": 1,
                         "adm1_code": "HRV-1588",
                         "OBJECTID_1": 2225,
@@ -896,6 +916,8 @@
                     ],
                     "properties": {
                         "population": 769944,
+                        "muskarci": 359817,
+                        "zene":410127,
                         "area": 1,
                         "adm1_code": "HRV-1589",
                         "OBJECTID_1": 2226,
@@ -968,6 +990,8 @@
                     ],
                     "properties": {
                         "population": 195794,
+                        "muskarci": 94782,
+                        "zene":101012,
                         "area": 1,
                         "adm1_code": "HRV-1592",
                         "OBJECTID_1": 2227,
@@ -1043,6 +1067,8 @@
                     ],
                     "properties": {
                         "population": 130782,
+                        "muskarci": 63752,
+                        "zene":67030,
                         "area": 1,
                         "adm1_code": "HRV-1602",
                         "OBJECTID_1": 2228,
@@ -1118,6 +1144,8 @@
                     ],
                     "properties": {
                         "population": 259481,
+                        "muskarci": 124983,
+                        "zene":134498,
                         "area": 1,
                         "adm1_code": "HRV-1603",
                         "OBJECTID_1": 2229,
@@ -1191,6 +1219,8 @@
                     ],
                     "properties": {
                         "population": 64420,
+                        "muskarci": 31428,
+                        "zene":32992,
                         "area": 1,
                         "adm1_code": "HRV-1604",
                         "OBJECTID_1": 2230,
@@ -1263,6 +1293,8 @@
                     ],
                     "properties": {
                         "population": 144438,
+                        "muskarci": 70010,
+                        "zene":74428,
                         "area": 1,
                         "adm1_code": "HRV-1605",
                         "OBJECTID_1": 2231,
@@ -1337,6 +1369,8 @@
                     ],
                     "properties": {
                         "population": 70660,
+                        "muskarci": 34187,
+                        "zene":36473,
                         "area": 1,
                         "adm1_code": "HRV-1606",
                         "OBJECTID_1": 2232,
@@ -1409,6 +1443,8 @@
                     ],
                     "properties": {
                         "population": 102295,
+                        "muskarci": 49945,
+                        "zene":52350,
                         "area": 1,
                         "adm1_code": "HRV-1607",
                         "OBJECTID_1": 2233,
@@ -1483,6 +1519,8 @@
                     ],
                     "properties": {
                         "population": 101661,
+                        "muskarci": 49418,
+                        "zene":52243,
                         "area": 1,
                         "adm1_code": "HRV-1608",
                         "OBJECTID_1": 2234,
@@ -1556,6 +1594,8 @@
                     ],
                     "properties": {
                         "population": 105863,
+                        "muskarci": 51840,
+                        "zene":54023,
                         "area": 1,
                         "adm1_code": "HRV-1609",
                         "OBJECTID_1": 2235,
@@ -1628,6 +1668,8 @@
                     ],
                     "properties": {
                         "population": 160264,
+                        "muskarci": 78016,
+                        "zene":82248,
                         "area": 1,
                         "adm1_code": "HRV-1610",
                         "OBJECTID_1": 2236,
