@@ -11,10 +11,13 @@
 </head>
 
 <body>
-    <div id="naslov">
-        Popis stanovništva 2021
+    <div class="sve">
+        <div class="map">
+            <p id="naslov">
+                Popis stanovništva 2021
+            </p>
+        </div>
     </div>
-    <div class="sve"></div>
     <script>
         var width = 1000;
         var height = 700;
@@ -34,21 +37,23 @@
         var path = d3.geo.path()
             .projection(projection);
 
-        var svg = d3.select(".sve").append("svg")
+        var svg = d3.select(".map").append("svg")
             .attr("class", "map")
             .attr("width", width)
             .attr("height", height)
 
-        var legend = d3.select(".sve").append("div")
+        var legend = d3.select(".map").append("div")
             .attr("id", "legend")
+            legend.append("text").text("manje od 105.000 ")
         legend.append("div").attr("class", "box a0")
         legend.append("div").attr("class", "box a1")
         legend.append("div").attr("class", "box a3")
         legend.append("div").attr("class", "box a4")
         legend.append("div").attr("class", "box a5")
         legend.append("div").attr("class", "box a6")
+        legend.append("text").text(" više od 750.000 ")
 
-        d3.select(".sve").append("div")
+        d3.select("body").append("div")
             .attr("id", "info")
 
         var g = svg.append("g")
@@ -72,10 +77,18 @@
         });
 
         function onClick(d) {
+            d3.select(".sve .chart").remove()
+            d3.select(".sve").append("div").attr("class", "chart")
             d3.select(".pie_svg").remove()
+            d3.select(".chart_naslov").remove()
+
+            d3.select(".chart")
+                .append("div")
+                .attr("class", "chart_naslov")
+                .append("text").text("Omjer broja muškaraca i žena")
 
             data = [{ value: d.properties.muskarci }, { value: d.properties.zene }]
-            var pieSvg = d3.select("body")
+            var pieSvg = d3.select(".chart")
                 .append("svg")
                 .attr("class", "pie_svg")
                 .attr("width", widthh)
